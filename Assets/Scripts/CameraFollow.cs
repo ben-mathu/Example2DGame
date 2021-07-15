@@ -13,7 +13,7 @@ public class CameraFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindWithTag("Player").transform;
+        player = GameObject.FindWithTag(Constants.PLAYER_TAG).transform;
     }
 
     // Update is called once per frame
@@ -24,6 +24,8 @@ public class CameraFollow : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (!player) return;
+
         tempos = transform.position;
         tempos.x = player.position.x;
 

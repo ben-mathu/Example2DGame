@@ -10,17 +10,17 @@ GameObject:
   m_Component:
   - component: {fileID: 872095129801038654}
   - component: {fileID: 1916971878542245315}
-  - component: {fileID: 3822069368061417168}
   - component: {fileID: 3691601517531440261}
+  - component: {fileID: 3777726159070093715}
   - component: {fileID: 5009086491889543123}
   - component: {fileID: 1610460702}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemies 2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &872095129801038654
 Transform:
   m_ObjectHideFlags: 0
@@ -86,32 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &3822069368061417168
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1300934597646700909}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.18032098, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.29, y: 2.11}
-    newSize: {x: 1.29, y: 2.11}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.8528583, y: 2.11}
-  m_EdgeRadius: 0
 --- !u!50 &3691601517531440261
 Rigidbody2D:
   serializedVersion: 4
@@ -133,6 +107,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!70 &3777726159070093715
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300934597646700909}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.17893046, y: 0}
+  m_Size: {x: 0.8367095, y: 2.11}
+  m_Direction: 0
 --- !u!114 &5009086491889543123
 MonoBehaviour:
   m_ObjectHideFlags: 0

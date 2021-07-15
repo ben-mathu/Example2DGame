@@ -12,12 +12,11 @@ public class Monster : MonoBehaviour
     private void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
-        speed = 7;
     }
 
     private void FixedUpdate()
     {
-        myBody.velocity = new Vector3(speed, myBody.velocity.y);
+        myBody.velocity = new Vector2(speed, myBody.velocity.y);
     }
 
     // Start is called before the first frame update
